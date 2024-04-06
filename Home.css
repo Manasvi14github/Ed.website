@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding:30px 20px;
+    justify-content: center;
+    align-items: normal;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-evenly;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 23px;
+    padding:10px 20px;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    color:rgb(113, 193, 196);
+    font-size:99px;  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.text-box h2{
+    color:rgb(113, 193, 196);
+    font-size:50px;
+}
+.text-box p{
+    margin:10px 0px 40px;
+    font-size: 22px;
+    color:whitesmoke;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition: all 0.3 linear;
+}
+.container {
+    background-color:whitesmoke;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width:360px;
+    height:440px;
+    border-radius:5px;
+    padding:20px;
+    padding-top:80px;
+    margin:30px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    overflow:hidden;
+    position:relative;
+    background-image: url("master.jpg");
+    background-size:cover;
+    
+}
+.box h3{
+    font-size:40px;
+    padding:20px 0;
+    color:black;
+}
+.box p{
+    font-size: 25px;
+    font-weight: 200px;
+}
+.box:hover{
+    transform:scale(1.1);
+    z-index:1;
+}

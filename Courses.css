@@ -1,0 +1,64 @@
+h1{
+    letter-spacing: 1px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-weight: 200px;
+    font-size:80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:serif;
+}
+
+body{
+    background-image: url("book.jpg");
+    background-size: cover;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width:380px;
+    height:500px;
+    background-color:aliceblue;
+    background: color #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin:20px;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+}
+
+.card-content{
+    padding:15px;
+}
+.card-content h3{
+    font-size:30px;
+    margin-bottom:6px;
+}
+.card-content p{
+    color:black;
+    font-size:15px;
+    line-height:1.7;
+}
+.card:hover{
+    transform:scale(1.1);
+    z-index:1;
+}
+
